@@ -451,13 +451,7 @@ function tasksLoader() {
 
 
 }
-window.onclick = function(event) {
-    if (event.target == document.getElementById("myModal")) {
-        document.getElementById("myModal").style.visibility = "hidden";
-        document.getElementById("myModal").style.opacity = 0;
 
-    }
-}
 window.onclick = function(event) {
     if (event.target == document.getElementById("myModal3")) {
         document.getElementById("myModal3").style.visibility = "hidden";
@@ -540,5 +534,11 @@ function ratingsLoader() {
         }, 1600);
     })
     }
-
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("myModal")) {
+            document.getElementById("myModal").style.visibility = "hidden";
+            document.getElementById("myModal").style.opacity = 0;
+    
+        }
+    }
 notesLoader();
