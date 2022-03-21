@@ -1,4 +1,4 @@
-let apiadress = "https://quirky-server.herokuapp.com/api/v1"
+let apiadress = "https://quirky-diary.herokuapp.com/api/v1"
 
 function colorizer(str) {
     let red = parseInt(str.substr(1, 2), 16);
