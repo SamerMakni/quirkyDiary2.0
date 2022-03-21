@@ -1,0 +1,578 @@
+* {
+    -webkit-font-smoothing: antialliased;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+ ::-webkit-scrollbar-track {
+    position: hidden;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: black;
+    max-height: 4px;
+    border-radius: 3px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    margin-top: 8%;
+    -webkit-appearance: none;
+    width: 200px;
+    height: 3px;
+    background: #252525;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 50px !important;
+}
+
+.slider:hover {
+    opacity: 2;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-bottom: 6%;
+    width: 1.5px;
+    height: 4px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid rgb(0, 0, 0);
+    /* background: #000000; */
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #000000;
+    cursor: pointer;
+}
+
+#dayStatus1 {
+    font-family: ThirdFont;
+    font-size: x-small;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    bottom: 51%;
+    color: #252525;
+}
+
+#dayAccept {
+    font-family: ThirdFont;
+    font-size: x-small;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 92%;
+    bottom: 36%;
+    color: #252525;
+}
+
+#dayAccept:hover {
+    font-family: ThirdFont;
+    font-size: x-small;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 92%;
+    bottom: 36%;
+    color: #8a8a8a;
+}
+
+#dayStatus2 {
+    font-family: ThirdFont;
+    font-size: x-small;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 86%;
+    bottom: 51%;
+    color: #252525;
+}
+
+@font-face {
+    font-family: Mainfont;
+    src: url(./assets/fonts/font.otf);
+}
+
+@font-face {
+    font-family: Secondfont;
+    src: url(./assets/fonts/ZURCHUKE.ttf);
+}
+
+@font-face {
+    font-family: ThirdFont;
+    src: url(./assets/fonts/ckhans-fonts-helonik-regular-demo.otf);
+}
+
+@font-face {
+    font-family: FourthFont;
+    src: url(./assets/fonts/VengeanceRegular-E27W.otf)
+}
+
+@font-face {
+    font-family: FifthFont;
+    src: url(./assets/fonts/LinuxLibertineDisplay-23pl.ttf);
+}
+
+#myModal3 {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(100, 100, 1);
+    background-color: rgba(26, 24, 24, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#modalContent3 {
+    font-family: ThirdFont;
+    margin: auto;
+    padding: 10px;
+    border: 0px solid #888;
+    width: 28%;
+    height: fit-content;
+    overflow-y: hidden;
+    max-height: fit-content;
+    overflow: hidden;
+}
+
+#myModal2 {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(100, 100, 1);
+    background-color: rgba(26, 24, 24, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#myModal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(100, 100, 1);
+    background-color: rgba(26, 24, 24, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+/* Modal Content */
+
+#modalContent2 {
+    font-family: ThirdFont;
+    margin: auto;
+    padding: 10px;
+    border: 0px solid #888;
+    width: 28%;
+    height: fit-content;
+    overflow-y: hidden;
+    max-height: fit-content;
+    overflow: hidden;
+}
+
+.modal-content {
+    font-family: ThirdFont;
+    background-color: #FFFFFF;
+    margin: auto;
+    padding: 20px;
+    border: 0px solid #888;
+    width: 30%;
+    height: fit-content;
+    overflow-y: hidden;
+    max-height: 63px;
+}
+
+.noteAdd {
+    font-family: FourthFont;
+    border: 1px solid;
+    height: 20px;
+    min-width: 100%;
+    border-color: rgb(0, 0, 0);
+}
+
+.inputer {
+    font-family: FourthFont;
+    border: 1px solid;
+    height: 20px;
+    min-width: 90%;
+    border-color: rgb(0, 0, 0);
+}
+
+#noteDescription {
+    font-family: FourthFont;
+    border: 1px solid;
+    max-height: 200px;
+    min-width: 100%;
+    border-color: rgb(0, 0, 0);
+    resize: none;
+}
+
+
+/* .inputer:focus {
+    font-family: SecondFont;
+    border: 1px solid;
+    border-color: black;
+} */
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: Secondfont;
+    overflow-y: hidden;
+}
+
+#quote {
+    font-family: FourthFont !important;
+}
+
+#tasks {
+    font-family: ThirdFont !important;
+    /* border: 1px solid; */
+    border-color: white;
+    min-height: 130px;
+    max-height: 130px;
+    max-width: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    margin: 3px;
+}
+
+#notes {
+    font-family: ThirdFont !important;
+    /* border: 1px solid; */
+    border-color: white;
+    min-height: 130px;
+    max-height: 130px;
+    max-width: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    margin: 3px;
+    position: relative;
+}
+
+#rate {
+    /* border: 1px solid; */
+    border-color: white;
+    min-height: 130px;
+    max-height: 130px;
+    max-width: 100%;
+    left: 59%;
+    top: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+    margin: 3px;
+    position: absolute;
+}
+
+#reference {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family: FifthFont !important;
+    color: white;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    font-size: large;
+}
+
+#description {
+    position: fixed;
+    display: hidden;
+    bottom: 0;
+    left: 0;
+    font-family: FourthFont;
+    color: azure;
+    padding-left: 1%;
+    padding-right: 3%;
+    font-size: small;
+}
+
+#accept {
+    font-family: ThirdFont;
+    font-size: small;
+    height: 20px;
+    width: 35px;
+    border: 1px solid;
+    /* border-color: white;
+    color: white; */
+    margin: 0%;
+}
+
+#accept:hover {
+    font-family: ThirdFont;
+    font-size: small;
+    padding-bottom: 1px;
+    border: 1px solid;
+    border-color: white;
+    background-color: white;
+    color: black;
+    margin: 0%;
+}
+
+#acceptNote {
+    font-family: ThirdFont;
+    font-size: small;
+    height: 20px;
+    width: 35px;
+    left: 91%;
+    position: absolute;
+    border: 1px solid;
+    /* border-color: white;
+    color: white; */
+    margin: 0%;
+    position: relative;
+}
+
+#acceptNote:hover {
+    font-family: ThirdFont;
+    font-size: small;
+    padding-bottom: 1px;
+    border: 1px solid;
+    border-color: white;
+    background-color: white;
+    color: black;
+    margin: 0%;
+}
+
+#add {
+    font-family: ThirdFont;
+    font-size: small;
+    height: 20px;
+    width: fit-content;
+    left: 41%;
+    position: relative;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    border: 1px solid;
+    /* border-color: white;
+    color: white; */
+    margin: 0%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+#addNote {
+    font-family: ThirdFont;
+    font-size: small;
+    height: 20px;
+    width: fit-content;
+    left: 41%;
+    position: relative;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    border: 1px solid;
+    /* border-color: white;
+    color: white; */
+    margin: 0%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+#add:hover {
+    font-family: ThirdFont;
+    font-size: small;
+    height: 20px;
+    width: fit-content;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    border: 1px solid;
+    border-color: white;
+    background-color: white;
+    color: black;
+    margin: 0%;
+}
+
+#addNote:hover {
+    font-family: ThirdFont;
+    font-size: small;
+    height: 20px;
+    width: fit-content;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+    border: 1px solid;
+    border-color: white;
+    background-color: white;
+    color: black;
+    margin: 0%;
+}
+
+#error {
+    font-size: x-small !important;
+    color: red;
+    overflow: hidden;
+    position: absolute;
+}
+
+#error2 {
+    font-size: x-small !important;
+    color: red;
+    overflow: hidden;
+    position: absolute;
+    top: 53%;
+}
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0);
+    background-image: url("editor-2.1s-47px.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form-check-input:checked+span {
+    text-decoration: line-through;
+}
+
+#refImage {
+    position: absolute;
+    color: white;
+    font-size: medium;
+    bottom: 5%;
+    right: 1%;
+    font-family: FifthFont;
+    cursor: pointer;
+}
+
+#refImage:hover {
+    position: absolute;
+    color: rgb(184, 184, 184);
+    font-size: medium;
+    bottom: 5%;
+    right: 1%;
+    font-family: FifthFont;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#showImage {
+    position: absolute;
+    color: white;
+    font-size: medium;
+    bottom: 2%;
+    right: 1%;
+    font-family: FifthFont;
+}
+
+#showImage:hover {
+    position: absolute;
+    color: rgb(184, 184, 184);
+    font-size: medium;
+    bottom: 2%;
+    right: 1%;
+    font-family: FifthFont;
+    text-decoration: underline;
+}
+
+#leftSection {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+#rightSection {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s, visibility 0.4s;
+    max-height: fit-content;
+    position: relative;
+    height: fit-content;
+}
+
+#input,
+#inputNote,
+#noteDescription:focus {
+    outline: none !important;
+}
+
+
+/* 
+#visRate {
+    position: absolute;
+    left: 60%;
+    top: 2%;
+    height: 300px;
+    width: 300px;
+} */
+
+#rating {
+    position: absolute;
+    left: 60%;
+    top: 2%;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+#visRate {
+    position: absolute;
+    right: 18%;
+    bottom: 8%;
+    top: 3%;
+    min-height: 240px;
+    min-width: 280px;
+    max-height: 240px;
+    max-width: 280px;
+}

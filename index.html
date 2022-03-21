@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>My Quirky Diary</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://www.dafontfree.net/embed/enVyaWNoLXVibGtleC1idC11bHRyYS1ibGFjayZkYXRhLzI4L3ovMTQ5MDMxL1pVUkNIVUtFLnR0Zg" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="flex mx-64 my-5" style="background-image: url('')" id="myBody">
+
+    <div id="myModal" class="">
+        <div class="modal-content" id="modalContent">
+            <p>
+                <input autocomplete="off" type="text" class="inputer" text="Add Task" id="input">
+                <button id="accept" class="">OK</button>
+            </p>
+            <p id="error">
+            </p>
+
+        </div>
+    </div>
+
+    <div id="myModal2" class="">
+        <div class="modal-content" id="modalContent2">
+            <p>
+                <h3>Title</h3>
+                <input autocomplete="off" type="text" class="noteAdd" text="Add Note" id="inputNote">
+                <h3>Note Content</h3>
+                <textarea name="Desc" id="noteDescription" cols="30" rows="10"></textarea>
+                <br>
+                <button id="acceptNote" class="">OK</button>
+            </p>
+            <p id="error2">
+            </p>
+
+        </div>
+    </div>
+    <div id="myModal3" class="">
+        <div class="modal-content" id="modalContent3">
+            <p>
+                Loading
+            </p>
+
+        </div>
+    </div>
+    <div class="w-1/3 p-3 bg-gray-100 bg-opacity-60" id="leftSection">
+
+        <p class="text-4xl" onselectstart="return false">
+            My <br>Quirky <br> Diary
+        </p>
+        <br>
+
+        <p id="time">
+            Error Loading
+        </p>
+
+        <p class="text-base">
+            Hello, Samer!
+        </p>
+
+        <br>
+        <p id="quote" class="text-sm">
+            Quotes
+        </p>
+        <br>
+
+        <!-- <p id="currentTime">TIME</p> -->
+    </div>
+
+
+    <div class="w-2/3 p-4 bg-blue-100 text-sm bg-opacity-80" id="rightSection">
+        <h2></h2>
+        <p> Today's Tasks</p>
+        <div class="p-2" id="tasks">
+
+        </div>
+        <button id="add">
+            Add Task
+        </button>
+        <br>
+        <br>
+        <p> Today's Notes</p>
+        <div class="p-2" id="notes">
+        </div>
+        <button id="addNote">
+            Add Note
+        </button>
+        <div class="p-2" id="rating">
+            <p>Today's rating</p>
+
+        </div>
+        <div class="p-2" id="rate">
+            <p>Rate your day</p>
+            <input type="range" min="1" max="100" value="50" id="slider" class="slider"> <br>
+            <p id="dayStatus1">bad</p>
+            <p id="dayStatus2">good</p>
+        </div>
+        <h3 id="dayAccept" class="cursor-pointer">OK</h3>
+
+    </div>
+    <div id="visRate"></div>
+
+    <p id="reference">
+
+    </p>
+    <p id="refImage">Refresh Artwork</p>
+    <p id="showImage">Show Artwork</p>
+
+    <p id="description">
+
+    </p>
+
+    <div id="loading" class="border-black opacity-100 transition transition-opacity duration-1000 ease-in-out"></div>
+
+
+</body>
+<script src="apache.min.js"></script>
+<script src="script.js"></script>
+
+
+</html>
